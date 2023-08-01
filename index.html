@@ -1,0 +1,477 @@
+<html>
+<style type="text/css">
+  body{
+    
+     height: calc(100% - 12px);
+  position: relative;
+  background: url("") repeat;
+  z-index: 0;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 10px solid black;
+  border-radius: 80% 80% 10% 10% / 10% 10% 0% 0% 
+
+}
+
+.box--gradient {}
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: red;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:10px;
+    min-height:70px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:20px;
+  }
+}
+ body{background-color:green}
+ #tes{position:absolute;top:36px;z-index:1;background-color:red;color:white;opacity:0.7;border-radius:5px;padding:5px;
+ font-size:20px;
+ }
+
+
+ 
+
+</style>
+
+
+<link
+    rel="stylesheet"
+    href="animatecss.css"
+  />
+ 
+  <script onload="alert('login sukses')" src='voice.js'></script>
+<style>
+body {
+  font-family:Calibri;
+  overflow: hidden; /* Hide scrollbars */  
+}
+body{margin:0px;background-color:black;color:white}
+#jud{font-size:100px;font-weight:bold;}
+#JUD:hover{cursor:pointer}
+#smp {font-size:70px;font-weight:bold;}
+#jam {font-size:90px;font-weight:bold;}
+#isi {font-size:100px;font-weight:bold;font-family:Times New Roman}
+table {font-size:80px;
+   border-collapse: collapse;
+    
+	}
+
+	
+#tabel1 th { padding:5px;
+  
+	border:7px solid white;
+     padding:0px 10px;
+}
+
+#tabel2 th { padding:5px;
+  
+	border:none;
+     padding:0px 10px;
+}
+
+<!--table th:nth-child(1) { border-top-left-radius:5px;
+ }-->
+</style>
+<body> 
+ 
+
+<img onclick="play('tesss')" id="speak" src="speak.gif" style="position:fixed;bottom:2px;z-index:10000;width:700px;display:none"/>
+<img  src="smp.png" style="position:absolute;right:100px;top:2px;width:200px;height:220" />
+<img  src="dinas.png" style="position:absolute;left:100px;top:2px;width:250px;height:220" />
+
+<!--<img style="position:absolute;bottom:1px" src="speak.gif"/>-->
+<div style="width:95%;margin:auto;">
+<center><span id="jud">UPTD SMP NEGERI 9 SINJAI</span><br>
+<span id="smp"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span id="jam" class=""></span><br>
+<hr style="border:10px solid white;border-radius:40px">
+</center><br/>
+</div>
+<div style="width:70%;margin:auto;">
+<table id="tabel2" border="0">
+<tr>
+<th id="sesi" style="text-align:center;background:white;border-radius:10px;color:black">
+Sesi 1
+</th>
+<th style="width:100px">
+:
+</th>
+<th id="jadwal" style="text-align:left;">
+Jam 08:00 s/d 10.00 
+</th>
+</tr>
+<tr>
+<th id="JUD"  onclick="play('tesss')" class="">
+TOKEN
+</th>
+<th>
+:
+</th>
+<th id="token" style="height:20rem;font-size:15rem;text-align:left">
+
+</th>
+</tr>
+
+
+
+<tr>
+<th>
+MAPEL
+</th>
+<th>
+:
+</th>
+<th  style="font-size:70px;text-align:left">
+Subtes 1 adalah Latihan,Subtes 2 adalah Numerasi,Subtes 3 adalah Survei Lingkungan Belajar
+</th>
+</tr>
+
+
+
+
+
+</table>
+
+<p/>
+
+
+<table id="tabel1">
+<tr>
+<th colspan="5">
+</th>
+</tr>
+<tr>
+<th  style="width:40rem;background:green;font-size:70px;">
+Sesi
+</th>
+<th  style="width:80rem;background:green;font-size:70px;">
+Laki-Laki
+</th>
+<th style="width:40rem;background:green;font-size:70px;">
+Perempuan
+</th>
+<th  style="width:40rem;background:green;font-size:70px;">
+Jumlah
+</th>
+<th  style="width:40rem;background:green;font-size:70px;">
+Total
+</th>
+</tr>
+<tr>
+<th id="sesi" style="font-size:90px;">
+1
+</th>
+<th id="laki" style="font-size:90px;">
+9
+</th>
+<th id="perempuan" style="font-size:90px;">
+8
+</th>
+<th id="total" style="font-size:90px;">
+17
+</th>
+<th rowspan='2' style="font-size:90px;">
+36
+</th>
+</tr>
+
+<tr>
+<th id="sesi" style="font-size:90px;">
+2
+</th>
+<th id="laki" style="font-size:90px;">
+10
+</th>
+<th id="perempuan" style="font-size:90px;">
+9
+</th>
+<th id="total" style="font-size:90px;">
+19
+</th>
+</th>
+
+</tr>
+
+</table>
+
+
+
+ </div>
+ <p/> 
+<center>
+<div id="isi"  class="" style="margin-top:70px">
+"Harap tenang Sedang SIMULASI ANBK 2023"
+</div>  <center> 
+<iframe style="border:none;width:0px;height:0px;margin:0px;"   src="isi.html" ></iframe>
+
+<div class="header">
+
+<!--Content before waves-->
+
+<!--Waves Container-->
+<div>
+<svg class="waves" 
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.4)" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.1)" />
+</g>
+</svg>
+</div>
+<!--Waves end-->
+
+</div>
+<!--Header ends-->
+
+
+ <script>
+ 
+ var ganti=0;
+  var lod=0;
+  var hit=0
+  var dd=document.getElementById("JUD")
+  var ani=document.getElementById("isi")
+  var gantigbr=document.getElementById("foto")
+  var token=document.getElementById("token")
+   var speak=document.getElementById("speak")
+  var cekki='';
+var ch = new BroadcastChannel('tes')
+   ch.addEventListener('message', function(e){
+   if(cekki != e.data)
+   {
+   cekki=e.data;
+    
+     if (e.data==''){ play('Informasi. ,Mohon tenang ,Token sekarang ,belum di rilis oleh. server pusat'+e.data+' ,Sekali lagi Token sekarang ,belum dirilis oleh. server pusat')}
+	  else{ 
+          
+	    token.innerHTML=e.data.replaceAll(",","").replaceAll(".","").replaceAll(" ","");
+	 
+	 play('Informasi. ,Token sekarang ,berubah  ,token sekarang adalah. '+e.data+'  ,Sekali lagi ,token sekarang ,adalah. '+e.data)
+	
+	  }
+    
+   }
+   })
+
+
+var gt=["zoomIn","flip","zoomInDown","bounceInDown","rollIn","rubberBand","flip","zoomInRight","zoomInUp","shakeX","bounce","rollIn","wobble","rotateInUpRight","rotateIn","lightSpeedInLeft", "flipInY","flip","jello","heartBeat","rubberBand","shakeY","flip","shakeX","swing","flip","tada","fadeInTopRight","flip","rotateInDownLeft","jackInTheBox","flip","rollIn","zoomIn","flip","zoomInDown","zoomInUp","slideInUp"]
+  
+ var golo='tes apa kabar';
+  function play (golo){
+   responsiveVoice.speak(
+    golo,
+    "Indonesian Male",
+    {
+     pitch: 1, 
+     rate: 0.85, 
+     volume: 1, onend: function(){speak.style.display="none";},onstart: function(){speak.style.display="block";},
+    }
+   );
+  }  
+
+
+ ulang();
+function ulang(){
+          var waktu = new Date();
+		 var second = waktu.getSeconds();
+                 var hor=waktu.getHours();
+                 var min=waktu.getMinutes();
+                        if (hor>=0 & hor<=9){hor="0"+waktu.getHours()}
+			if (min>=0 & min<=9){min="0"+waktu.getMinutes()}
+                      if (second>=0 & second<=9){second="0"+waktu.getSeconds()}
+
+                     
+                       
+		document.getElementById("jam").innerHTML = hor+" : "+min+" : "+second
+
+
+
+             setTimeout(function(){   
+             hit++;
+             lod++;
+              dd.style.color="black"
+             if (hit>=2) {hit=0
+              dd.style.color="white"
+              
+                }
+              
+              if (lod>=10) {    
+                               lod=0;
+                              // alert(ganti)
+                               // window.location.reload();return false
+                                ani.className = "animate__animated animate__"+gt[ganti]; 
+                                
+                                 ganti++;
+                                if (ganti>= (gt.length+1)){ganti=0}
+                             }
+              ulang()
+             },500)            
+             }
+
+ 
+ 
+ 
+var smp=document.getElementById("smp") 
+tgl();
+ function tgl(){
+
+var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+
+var date = new Date();
+
+var day = date.getDate();
+
+var month = date.getMonth();
+
+var thisDay = date.getDay(),
+
+    thisDay = myDays[thisDay];
+
+var yy = date.getYear();
+
+var year = (yy < 1000) ? yy + 1900 : yy;
+smp.innerHTML=thisDay + ', ' + day + ' ' + months[month] + ' ' + year
+ var ms=document.getElementById("sesi");
+ var jj=document.getElementById("jadwal");
+ var laki=document.getElementById("laki");
+ var perempuan=document.getElementById("perempuan");
+ var total=document.getElementById("total")
+var jam=date.getHours()
+    if(jam>=7 & jam<=9){
+                        ms.innerHTML="SESI 1";
+						jj.innerHTML="07:30 s/d 11:40 wita"
+						//laki.innerHTML="10";
+						//perempuan.innerHTML="9";
+						//total.innerHTML="19";
+                       }
+ if(jam>=10 & jam<=12){
+                        ms.innerHTML="SESI 2";
+						jj.innerHTML="10:40 s/d 12:50 wita";
+                                                 //laki.innerHTML="10";
+						//perempuan.innerHTML="9";
+						//total.innerHTML="19";
+                       }
+ if(jam>=13 & jam<=24){
+                        ms.innerHTML="SESI 3";
+						jj.innerHTML="13:00 s/d 15:00 wita"
+						//laki.innerHTML="22";
+						//perempuan.innerHTML="3";
+						//total.innerHTML="25";
+                       }
+}
+
+
+
+</script> 
+  
+  
+</body>
+</html>
+
